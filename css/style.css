@@ -19,8 +19,7 @@ html {
     float: left;
 }
 
-.clearfix-left::after,
-.clearfix-right::after {
+.clearfix::after {
     content: "";
     display: table;
     clear: both;
@@ -39,7 +38,7 @@ h3 {
 }
 
 p {
-    font-size: 0.7em;
+    font-size: 1em;
 }
 
 a {
@@ -55,7 +54,8 @@ a {
 }
 
 .btn-blue {
-
+    padding: 0.6em 1.2em;
+    
     background-color: #0061ff;
     color: white;
 }
@@ -76,14 +76,10 @@ li {
 
 header {
     width: 100%;
-    height: 100px;
+    height: 90px;
     /* border: 1px solid black; */
-    position: fixed;
-    /* overflow: hidden; */
-}
-
-header img {
-    display: inline-block;
+    position: static;
+    padding: 0 2rem;
 }
 
 header .logo {
@@ -94,7 +90,7 @@ header .logo {
 
 .logo img {
     width: 10em;
-    padding-left: 2rem;
+
 }
 
 header ul a {
@@ -103,12 +99,8 @@ header ul a {
     font-size: 1.2em;
  }
 
-.nav-right {
-    margin-left: 30rem;
-}
-
-.btn-cont {
-
+.float-right {
+    float: right ;
 }
 
 .btn-cont {
@@ -116,8 +108,7 @@ header ul a {
 }
 
 .btn-invia {
-    line-height: 2.5em;
-    padding: 0 1.5em;
+    line-height: 0.8em;
 }
 
 
@@ -125,8 +116,38 @@ header ul a {
 
 .hero {
     width: 100%;
-    height: 5000vh;
+    height: 750px;
     background-color:#b4d0e7 ;
+}
+
+.hero .content {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-top: 5rem;
+    /* border: 1px solid black; */
+}
+
+.hero h1 {
+    font-size: 5em;
+    margin-bottom: 4rem;
+}
+
+.hero p {
+    margin-bottom: 2rem;
+}
+
+.hero .btn-hero {
+    margin-bottom: 1.5rem;
+
+}
+
+.hero .cont-prova {
+    max-width: 400px;
+}
+
+.hero .image-hero {
+    width:  900px;
+    background-size: cover;
 }
 
 
