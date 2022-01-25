@@ -30,7 +30,7 @@ html {
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 3em;
 }
 
 h3 {
@@ -60,9 +60,6 @@ a {
     color: white;
 }
 
-ul {
-    /* display: inline-block; */
-}
 
 li {
     list-style: none;
@@ -152,5 +149,127 @@ header ul a {
 
 
 
+/* main section */
+
+.container {
+    max-width: 1100px;
+    height: 800vh;
+    margin: 0 auto;
+    padding-top: 12rem;
+}
+
+.dropbox-plan h2 {
+    padding-bottom: 4rem;
+}
+
+
+.checkcirle {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+.checkcirle.border {
+    border: 0.3em solid #0061ff;
+}
+
+.fatturazione {
+    margin-right: 1.5em;
+}
+
+
+
+/* cards */ 
+
+.cards {
+    /* margin: auto; */
+    width: 100%;
+    /* margin-left: -2rem; */
+    /* margin-right: -2rem; */
+    /* border: 1px solid gray; */
+    
+}
+
+.card {
+    width: calc((100% - 12rem) / 3);
+    margin: 2rem 2rem;
+}
+
+.card .top-card {
+    padding: 0.5em 0;
+    border: 1px solid gray;
+}
+
+.card .main-card {
+    padding: 2em 2em;
+    font-size: 14px;
+
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+
+}
+
+
+.card h3 {
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.card .prize {
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.card .date {
+    color: gray;
+    margin-bottom: 2em;
+}
+
+.card .user {
+    margin-bottom: 1.5em;
+}
+
+.card .arc-space {
+    margin-bottom: 1.5em;
+}
+
+.card .note {
+    margin-bottom: 1.5em;
+}
+
+.card .btn-card {
+    margin-bottom: 1.5em;
+}
+
+.card .buy {
+    margin-bottom: 1.5em;
+
+}
+
+.card .line {
+    width: 3rem;
+    border: 0.2px solid gray;
+    margin-bottom: 1.5em;
+
+}
+
+.card .offer {
+    font-weight: bold;
+    margin-bottom: 1.5em;
+}
+
+.card li {
+    margin-bottom: 1.5em;
+
+}
+
+.card li::before {
+    content: '\2713';
+    padding: 0.5em;
+    color: bl;
+}
 
 
