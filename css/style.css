@@ -85,7 +85,7 @@ header .logo {
     padding-right: 2rem;
 }
 
-.logo img {
+header .logo img {
     width: 10em;
 
 }
@@ -135,7 +135,6 @@ header ul a {
 
 .hero .btn-hero {
     margin-bottom: 1.5rem;
-
 }
 
 .hero .cont-prova {
@@ -362,7 +361,7 @@ header ul a {
     margin-top: 4rem;
 }
 
-.content {
+.design .content-design {
     width: 40%;
 }
 
@@ -404,6 +403,31 @@ header ul a {
 .design .cont-image.bottom-right {
     background-color: #ff1c1c;
 }
+
+/* content-design */
+
+.design .content-design {
+    height: 100%;
+    padding: 0 2rem;
+    background-color: #f5f5f5;
+
+}
+
+.design .content-design .cont-image {
+    width: 8rem;
+    height: 8rem;
+}
+
+.design .content-design p {
+    margin-bottom: 4rem;
+
+}
+
+
+
+
+
+
 
 
 
