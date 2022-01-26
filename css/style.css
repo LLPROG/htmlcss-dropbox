@@ -48,7 +48,7 @@ a {
 }
 
 .btn-white {
-    padding: 0 0.5em;
+    padding: 0.5em 1.5em;
     border: 1px solid black;
     display: inline-block;
 }
@@ -211,12 +211,19 @@ header ul a {
     border-left: 1px solid gray;
     border-bottom: 1px solid gray;
     border-right: 1px solid gray;
-
 }
 
-
-.card h3 {
+.card h3,
+.card .user,
+.card .arc-space,
+.card .note,
+.card .btn-card,
+.card .buy,
+.card .line,
+.card .offer,
+.card li {
     margin-bottom: 1.5em;
+
 }
 
 .card .prize {
@@ -229,43 +236,15 @@ header ul a {
     margin-bottom: 2em;
 }
 
-.card .user {
-    margin-bottom: 1.5em;
-}
-
-.card .arc-space {
-    margin-bottom: 1.5em;
-}
-
-.card .note {
-    margin-bottom: 1.5em;
-}
-
-.card .btn-card {
-    margin-bottom: 1.5em;
-}
-
-.card .buy {
-    margin-bottom: 1.5em;
-
-}
-
 .card .line {
     width: 3rem;
     border: 0.2px solid gray;
-    margin-bottom: 1.5em;
-
 }
 
 .card .offer {
     font-weight: bold;
-    margin-bottom: 1.5em;
 }
 
-.card li {
-    margin-bottom: 1.5em;
-
-}
 
 
 /* enterprise */
@@ -303,9 +282,34 @@ header ul a {
 .enterprise .btn-sales {
     padding-left: 2em;
     padding-right: 2em;
+}
+
+
+/* partner */
+
+.partner {
+    margin-top: 8rem;
+}
+
+.partner img {
+    width: 55%;
+}
+
+.partner .content-partner {
+    width: 45%;
+    padding: 3em;
+}
+
+.partner h3,
+.partner p,
+.partner a {
+    margin-bottom: 1em;
 
 }
 
+.partner p {
+    line-height: 2em;
+}
 
 
 
