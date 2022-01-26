@@ -34,7 +34,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 p {
@@ -184,16 +184,16 @@ header ul a {
 /* cards */ 
 
 .cards {
-    /* margin: auto; */
-    width: 100%;
-    /* margin-left: -2rem; */
-    /* margin-right: -2rem; */
+    margin:  auto;
+    padding-left: -2rem;
     /* border: 1px solid gray; */
-    
+    margin-left: -2rem;
+    margin-right: -2rem;
+
 }
 
 .card {
-    width: calc((100% - 12rem) / 3);
+    width: calc((100% - 12em) / 3);
     margin: 2rem 2rem;
 }
 
@@ -203,6 +203,8 @@ header ul a {
 }
 
 .card .main-card {
+    min-height: 850px;
+
     padding: 2em 2em;
     font-size: 14px;
 
@@ -214,7 +216,6 @@ header ul a {
 
 
 .card h3 {
-    font-size: 1.5em;
     margin-bottom: 1.5em;
 }
 
@@ -266,10 +267,45 @@ header ul a {
 
 }
 
-.card li::before {
-    content: '\2713';
-    padding: 0.5em;
-    color: bl;
+
+/* enterprise */
+
+.enterprise {
+    padding-top: 3.5rem;
 }
+
+.top-enterprise {
+    font-weight: bold;
+    border: 1px solid gray;
+    padding: 0.8em 0;
+}
+
+.main-enterprise {
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    padding: 3em;
+}
+
+.enterprise h3,
+.enterprise h4 {
+    margin-bottom: 1em;
+}
+
+.enterprise p {
+    font-size: 0.9em;
+}
+
+.enterprise .float-right {
+    float: right;
+}
+
+.enterprise .btn-sales {
+    padding-left: 2em;
+    padding-right: 2em;
+
+}
+
+
 
 
