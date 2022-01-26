@@ -340,8 +340,22 @@ header ul a {
 
 .business p {
     line-height: 1.5em;
-
 }
+
+
+/* client */ 
+
+.client {
+    margin-top: 8rem;
+    padding-right: 42%;
+}
+
+.client a {
+    text-decoration: underline;
+    color: #166eff;
+}
+
+
 
 
 
