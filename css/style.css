@@ -304,12 +304,46 @@ header ul a {
 .partner p,
 .partner a {
     margin-bottom: 1em;
-
 }
 
 .partner p {
     line-height: 2em;
 }
+
+
+/* Business */
+
+.business {
+    margin-top: 8rem;
+}
+
+.business .cards {
+    /* border: 1px solid black; */
+    margin-left: -3rem;
+    margin-right: -3rem;
+
+}
+
+
+.business .card {
+    /* border: 1px solid black; */
+    width: calc((100% - 12rem) / 3);
+    margin: 0.5rem 2rem;
+    margin-bottom: 5rem;
+    padding: 0 1rem;
+
+}
+
+.business img {
+    width: 100%;
+}
+
+.business p {
+    line-height: 1.5em;
+
+}
+
+
 
 
 
