@@ -359,6 +359,7 @@ header ul a {
     width: 100%;
     height: 200px;
     margin-top: 4rem;
+    /* border: 1px solid black ; */
 }
 
 .design .content-design {
@@ -386,22 +387,43 @@ header ul a {
     width: 8rem;
 }
 
+/* background color puzzle left */
 
-.design .cont-image.top-left {
+
+.design .puzzle.left .cont-image.top-left {
     background-color: #a2d39b;
     border: 0.5rem solid #d0e9cd;
 }
 
-.design .cont-image.top-right {
+.design .puzzle.left .cont-image.top-right {
     background-color: #61082b;
 }
 
-.design .cont-image.bottom-left {
+.design .puzzle.left .cont-image.bottom-left {
     background-color: #0093ce;
 }
 
-.design .cont-image.bottom-right {
+.design .puzzle.left .cont-image.bottom-right {
     background-color: #ff1c1c;
+}
+
+/* background color puzzle right */
+
+
+.design .puzzle.right .cont-image.top-left {
+    background-color: #d5001f;
+}
+
+.design .puzzle.right .cont-image.top-right {
+    background-color: #b4d0e7;
+}
+
+.design .puzzle.right .cont-image.bottom-left {
+    background-color: #0d2481;
+}
+
+.design .puzzle.right .cont-image.bottom-right {
+    background-color: #ffd830;
 }
 
 /* content-design */
@@ -422,6 +444,35 @@ header ul a {
     margin-bottom: 4rem;
 
 }
+
+
+
+/* pre-footer */
+
+.pre-footer {
+    margin-top: 200px;
+    background-color: #b4d0e7;
+}
+
+
+.container-pre-footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 9rem 0;
+}
+
+.container-pre-footer h1 {
+    font-size: 2.5em;
+    width: 40%;
+    color: #61082b;
+}
+
+.container-pre-footer a {
+    background-color: white;
+    border: transparent;
+    padding: 0.5em 3.5em;
+}
+
 
 
 
