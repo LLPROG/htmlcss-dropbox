@@ -68,6 +68,10 @@ a {
     filter: opacity(0.8);
 }
 
+.btn-white:hover {
+    filter: opacity(0.8);
+}
+
 
 li {
     list-style: none;
@@ -87,8 +91,8 @@ li {
 
 /*  icons  */ 
 
-.fas .fa-check {
-    fill: #0061ff;
+.fas.fa-check {
+    color: #0061ff;
 }
 
 
@@ -98,17 +102,22 @@ li {
 /* style */
 
 header {
+    z-index: 9999;
     width: 100%;
+    min-width: 1500px;
     position: fixed;
+    top: 0;
+    left: 0;
+
     padding: 0 2rem;
     background-color: white;
-
+    line-height: 4em;
 
 }
 
 header .logo {
     display: inline-block;
-    line-height: 4em;
+    /* line-height: 4em; */
     padding-right: 2rem;
 }
 
@@ -119,16 +128,17 @@ header .logo img {
 }
 
 header ul a {
-    line-height: 4em;
+    /* line-height: 4em; */
     margin: 0 1.5em;
     font-size: 1.2em;
+
+    border-bottom: 2px solid transparent;
+    border-top: 2px solid transparent;
  }
 
  header li a:hover {
-    border-bottom: 2px solid black;
-
+    border-bottom: 2px solid gray;
  }
-
 
 .btn-cont {
     line-height: 4em;
@@ -138,17 +148,57 @@ header ul a {
     margin-left: 0.8em;
     vertical-align: middle;
     line-height: 1em;
-
 }
+
+/*bonus*/
+
+header .support {
+    position: relative;
+}
+
+.support .list-support {
+    display: none;
+    position: absolute;
+    top: 4.25rem;
+    left: 0;
+    background-color: white;
+}
+
+.support .list-support a {
+    width: 14em;
+}
+
+.list-support a {
+    margin: 0.5em 0;
+    padding-left: 2em;
+}
+
+.support:hover .list-support {
+    display: unset;
+}
+
+.support:hover .link-support {
+    border-bottom: 2px solid gray;
+    
+}
+
+.support:hover .list-support a {
+    border: transparent;
+}
+
+.list-support a:hover {
+    background-color: rgba(100, 100, 100, 0.2);
+}
+
 
 
 /* hero */
 
 .hero {
-
-    padding-top: 4rem;
+    padding-top: 6rem;
     width: 100%;
-    height: 750px;
+    min-width: 1400px;
+    height: 850px;
     background-color:#b4d0e7 ;
 }
 
@@ -179,6 +229,7 @@ header ul a {
 .hero .image-hero {
     width:  900px;
     background-size: cover;
+    filter: drop-shadow(0 0 0.50rem black);
 }
 
 
@@ -186,7 +237,7 @@ header ul a {
 /* main section */
 
 .container {
-    max-width: 1100px;
+    width: 1100px;
     margin: 0 auto;
     padding-top: 12rem;
 }
@@ -238,8 +289,6 @@ header ul a {
 }
 
 .card .main-card {
-    min-height: 850px;
-
     padding: 2em 2em;
     font-size: 14px;
 
@@ -408,6 +457,8 @@ header ul a {
 
 .design {
     width: 100%;
+    min-width: 1500px;
+
     height: 400px;
     margin-top: 4rem;
     /* border: 1px solid black ; */
@@ -500,10 +551,19 @@ header ul a {
 
 /* pre-footer */
 
+.pre-footer {
+    min-width: 1400px;
+
+}
+
 /*top*/
+
+
 
 .top-pre-footer {
     background-color: #b4d0e7;
+    min-width: 1500px;
+
 }
 
 
@@ -527,27 +587,55 @@ header ul a {
 /* bottom pre-footer */
 
 .bottom-pre-footer {
+    height: 800px;
     padding-bottom: 6rem;
 
 }
 
-.bottom-pre-footer h3{
-    padding-bottom: 2em;
+.bottom-pre-footer h3 {
+    padding-bottom: 1.5em;
     border-bottom: 1px solid gray;
     font-size: 2em;
 }
 
-.bottom-pre-footer li{
-    line-height: 5em;
+.bottom-pre-footer .hidden-list {
     border-bottom: 1px solid gray;
     display: block;
+    line-height: 5em;
+
 }
+
+.bottom-pre-footer .hidden-list ul {
+    width: 80%;
+}
+
+.bottom-pre-footer .hidden-list .inner-hidden {
+    line-height: 1em;
+    display: none;
+}
+
+.bottom-pre-footer .hidden-list .icons {
+    margin-right: 3rem;
+}
+
+.bottom-pre-footer .hidden-list:hover .inner-hidden  {
+    display: inline-block;
+}
+
+.bottom-pre-footer .hidden-list:hover .icons {
+    transform: rotateX(180deg);
+}
+
+
+
 
 
 
 /* footer */
 
 footer {
+    min-width: 1500px;
+
     background-color: #000000;
     color: white;
     padding-top: 3rem;
