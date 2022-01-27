@@ -8,7 +8,7 @@
 }
 
 html {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
 
@@ -117,21 +117,17 @@ header {
 
 header .logo {
     display: inline-block;
-    /* line-height: 4em; */
     padding-right: 2rem;
 }
 
 header .logo img {
     width: 10em;
     vertical-align: middle;
-
 }
 
 header ul a {
-    /* line-height: 4em; */
     margin: 0 1.5em;
     font-size: 1.2em;
-
     border-bottom: 2px solid transparent;
     border-top: 2px solid transparent;
  }
@@ -210,7 +206,7 @@ header .support {
 }
 
 .hero h1 {
-    font-size: 5em;
+    font-size: 4.5em;
     margin-bottom: 4rem;
 }
 
@@ -317,7 +313,6 @@ header .support {
 
 .card .buy a:hover {
     text-decoration: none;
-
 }
 
 .card .prize {
@@ -416,20 +411,15 @@ header .support {
 }
 
 .business .cards {
-    /* border: 1px solid black; */
     margin-left: -3rem;
     margin-right: -3rem;
-
 }
 
-
 .business .card {
-    /* border: 1px solid black; */
     width: calc((100% - 12rem) / 3);
     margin: 0.5rem 2rem;
     margin-bottom: 5rem;
     padding: 0 1rem;
-
 }
 
 .business img {
@@ -458,10 +448,8 @@ header .support {
 .design {
     width: 100%;
     min-width: 1500px;
-
     height: 400px;
     margin-top: 4rem;
-    /* border: 1px solid black ; */
 }
 
 .design .content-design {
@@ -476,7 +464,6 @@ header .support {
 .design .cont-image {
     width: 50%;
     height: 100%;
-    /* border: 1px solid black; */
     position: relative;
 }
 
@@ -666,6 +653,10 @@ footer {
 
 .container-footer .list-raw li {
     padding: 0.4rem 0;
+}
+
+.container-footer .list-raw li a:hover {
+    text-decoration: underline;
 }
 
 
