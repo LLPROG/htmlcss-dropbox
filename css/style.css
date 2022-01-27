@@ -96,9 +96,6 @@ li {
 }
 
 
-
-
-
 /* style */
 
 header {
@@ -267,7 +264,6 @@ header .support {
 
 .cards {
     margin:  auto;
-    padding-left: -2rem;
     /* border: 1px solid gray; */
     margin-left: -2rem;
     margin-right: -2rem;
@@ -441,6 +437,10 @@ header .support {
 .client a {
     text-decoration: underline;
     color: #166eff;
+}
+
+.client .underline:hover {
+    text-decoration: none;
 }
 
 /* design */
