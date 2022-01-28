@@ -19,14 +19,14 @@ html {
     float: left;
 }
 
-.float-right {
-    float: right ;
-}
-
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
+}
+
+.float-right {
+    float: right ;
 }
 
 .centered {
@@ -34,7 +34,7 @@ html {
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 2.8em;
 }
 
 h3 {
@@ -59,19 +59,14 @@ a {
 
 .btn-blue {
     padding: 0.6em 1.2em;
-    
     background-color: #0061ff;
     color: white;
 }
 
-.btn-blue:hover {
-    filter: opacity(0.8);
-}
-
+.btn-blue:hover,
 .btn-white:hover {
     filter: opacity(0.8);
 }
-
 
 li {
     list-style: none;
@@ -84,7 +79,6 @@ li {
 
 .width {
     width: 17em;
-    /* border: 1px solid black; */
     display: inline-block;
     vertical-align: text-top;
 }
@@ -98,11 +92,14 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-
     padding: 0 2rem;
     background-color: white;
-    line-height: 4em;
+    height: calc(4em + 4px);
+    
+}
 
+header .inner-header {
+    line-height: calc(4em + 2px);
 }
 
 header .logo {
@@ -118,8 +115,6 @@ header .logo img {
 header ul a {
     margin: 0 1.5em;
     font-size: 1.2em;
-    border-bottom: 2px solid transparent;
-    border-top: 2px solid transparent;
  }
 
  header li a:hover {
@@ -181,10 +176,10 @@ header .support {
 /* hero */
 
 .hero {
-    padding-top: 6rem;
+    margin-top: calc(4em + 4px);
+    padding-top: 2rem;
     width: 100%;
-    min-width: 1400px;
-    height: 850px;
+    height: 750px;
     background-color:#b4d0e7 ;
 }
 
@@ -192,7 +187,6 @@ header .support {
     max-width: 1300px;
     margin: 0 auto;
     padding-top: 5rem;
-    /* border: 1px solid black; */
 }
 
 .hero h1 {
@@ -205,16 +199,15 @@ header .support {
 }
 
 .hero .btn-hero {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .hero .cont-prova {
-    max-width: 400px;
+    max-width: 395px;
 }
 
 .hero .image-hero {
-    width:  900px;
-    background-size: cover;
+    width: 900px;
     filter: drop-shadow(0 0 0.50rem black);
 }
 
@@ -231,7 +224,6 @@ header .support {
 .dropbox-plan h2 {
     padding-bottom: 4rem;
 }
-
 
 .checkcirle {
     display: inline-block;
@@ -256,7 +248,7 @@ header .support {
 
 
 .cards {
-    margin:  auto;
+    margin:0 auto;
     /* border: 1px solid gray; */
     margin-left: -2rem;
     margin-right: -2rem;
@@ -268,9 +260,8 @@ header .support {
 }
 
 .card .top-card {
-    /* padding: 0.5em 0; */
     border: 1px solid gray;
-    line-height: 2rem;
+    line-height: 3rem;
 }
 
 .card .main-card {
@@ -290,9 +281,8 @@ header .support {
 .card .buy,
 .card .line,
 .card .offer,
-.card li {
+.card li { 
     margin-bottom: 1.5em;
-
 }
 
 .card .buy a {
@@ -306,7 +296,7 @@ header .support {
 
 .card .prize {
     font-weight: bold;
-    margin-bottom: 1em;
+    margin-bottom: 0.8em;
 }
 
 .card .date {
@@ -316,7 +306,7 @@ header .support {
 
 .card .line {
     width: 3rem;
-    border: 0.2px solid gray;
+    border: 0.5px solid gray;
 }
 
 .card .offer {
@@ -372,10 +362,6 @@ header .support {
 
 .enterprise p {
     font-size: 0.9em;
-}
-
-.enterprise .float-right {
-    float: right;
 }
 
 .enterprise .btn-sales {
@@ -436,12 +422,20 @@ header .support {
     line-height: 1.5em;
 }
 
+.business p a {
+    text-decoration: underline;
+}
+
+.business p a:hover {
+    text-decoration: none;
+}
+
 
 /* client */ 
 
 .client {
     margin-top: 8rem;
-    padding-right: 42%;
+    padding-right: 40%;
 }
 
 .client a {
@@ -468,7 +462,6 @@ header .support {
     overflow-y: auto;
     padding: 0 3rem;
     background-color: #f5f5f5;
-
 }
 
 .design .puzzle {
@@ -482,12 +475,17 @@ header .support {
     position: relative;
 }
 
+.design .line {
+    width: 3rem;
+    border: 0.5px solid gray;
+    margin-bottom: 2rem;
+}
+
 .design img {
     position: absolute;
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     width: 8rem;
 }
 
@@ -534,8 +532,6 @@ header .support {
 
 .design .content-design {
     height: 100%;
-    
-
 }
 
 .design .content-design .cont-image {
@@ -545,7 +541,6 @@ header .support {
 
 .design .content-design p {
     margin-bottom: 4.5rem;
-
 }
 
 
@@ -554,19 +549,15 @@ header .support {
 
 .pre-footer {
     min-width: 1400px;
-
 }
 
 /*top*/
 
 
-
 .top-pre-footer {
     background-color: #b4d0e7;
     min-width: 1500px;
-
 }
-
 
 .top-pre-footer .container {
     padding: 9rem 0;
@@ -582,6 +573,10 @@ header .support {
     background-color: white;
     border: transparent;
     padding: 0.5em 3.5em;
+}
+
+.top-pre-footer .btn-pre-footer {
+    margin-top: 2rem;
 }
 
 
@@ -616,7 +611,7 @@ header .support {
 }
 
 .bottom-pre-footer .hidden-list .inner-hidden {
-    line-height: 1em;
+    line-height: 1.5em;
     display: none;
 }
 
@@ -634,14 +629,10 @@ header .support {
 
 
 
-
-
-
 /* footer */
 
 footer {
     min-width: 1500px;
-
     background-color: #000000;
     color: white;
     padding-top: 3rem;
@@ -657,7 +648,6 @@ footer {
     width: calc(100% / 5);
     padding-bottom: 5rem;
 }
-
 
 .container-footer .list-raw li,
 .container-footer .list-raw a { 
